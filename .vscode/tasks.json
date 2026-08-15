@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Create gitignore",
+			"type": "shell",
+			"command": "@'\nnode_modules/\ndist/\n.vite/\n*.log\n*.err\n.DS_Store\n'@ | Set-Content -Path '.gitignore' -Encoding utf8",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
