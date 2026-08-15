@@ -9,6 +9,15 @@
 			"isBackground": false,
 			"problemMatcher": [],
 			"group": "build"
+		},
+		{
+			"label": "Create README",
+			"type": "shell",
+			"command": "@'\n# Image Reader\n\nA browser-based OCR app built with React + Vite that extracts text from uploaded images using PaddleOCR.\n\n## Features\n- Upload an image\n- Extract text in the browser\n- View OCR boxes and confidence scores\n- Copy or download the extracted text\n- Filipino/Tagalog OCR support\n\n## Requirements\n- Node.js 18 or newer\n- npm\n- A modern browser with internet access for the OCR model download\n\n## Setup\n\n1. Clone the repository\n   ```bash\n   git clone https://github.com/marklaurenceabdina/Image-to-text.git\n   cd Image-to-text\n   ```\n\n2. Install dependencies\n   ```bash\n   npm install\n   ```\n\n3. Start the development server\n   ```bash\n   npm run dev\n   ```\n\n4. Open the local URL shown by Vite, usually:\n   ```text\n   http://localhost:5173\n   ```\n\n## Production build\n\n```bash\nnpm run build\n```\n\n## Preview production build\n\n```bash\nnpm run preview -- --host\n```\n\n## Notes\n- The OCR model is downloaded at runtime in the browser, so the first run may take longer.\n- The app is configured to use WebAssembly (`wasm`) and Tagalog (`lang: \"tl\"`).\n- If OCR fails with a fetch error, make sure the browser has internet access and the app is running via the Vite dev server instead of opening the HTML file directly.\n'@ | Set-Content -Path 'README.md' -Encoding utf8",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
 		}
 	]
 }
